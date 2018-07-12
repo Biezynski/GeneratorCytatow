@@ -28,6 +28,8 @@ public class glowna{
 		
 		System.out.println(ListaCytatow.get(Losowaliczba));
 		
+		
+		
 		new GraficznyInterfejs().setVisible(true);
 		
 	}
