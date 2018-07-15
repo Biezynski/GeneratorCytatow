@@ -81,55 +81,109 @@ public class GraficznyInterfejs extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) { 
 
-		if (e.getSource() == przycisk) {
-
-			List<String> ListaCytatow = new ArrayList<String>();
-			ListaCytatow.add("Tylko ten nie pope³nia b³êdów, kto nic nie robi. -Napoleon Bonaparte");
-			ListaCytatow.add(
-					"S¹ dwa sposoby na tworzenie projektu oprogramowania. "
-					+ "Jednym jest stworzenie go "
-					+ "tak prostym, ¿eby nie by³o w nim ¿adnych oczywistych braków. Drugim stworzenie go "
-					+ "tak skomplikowanym, ¿eby nie by³o w nim ¿adnych oczywistych braków - Hoare");
-			ListaCytatow.add("Wiêkszoœæ z was zna ju¿ cnoty programistów. S¹ to oczywiœcie: "
-					+ "lenistwo, niecierpliwoœæ i pycha- Larry Wall");
-			ListaCytatow.add("Nie obchodzi mnie to, ¿e to nie dzia³a na twoim komputerze! Nie produkujemy"
-					+ " twoich komputerów! - Vidiu Platon");
-			ListaCytatow.add("Programowanie w C jest jak szybki taniec na œwie¿o pastowanej pod³odze "
-					+ "wœród ludzi trzymaj¹cych ¿yletki- Waldi Ravens");
-			ListaCytatow.add("Zawsze pisz kod tak, jakby goœæ, który ma siê nim zajmowaæ by³ agresywnym "
-					+ "psychopat¹, który wie, gdzie mieszkasz- Martin Golding");
-			ListaCytatow.add("Komputer zas³u¿y na miano inteligentnego, je¿eli spowoduje u cz³owieka "
-					+ "przekonanie, ¿e jest cz³owiekiem.- Alan Turing");
-			ListaCytatow.add("W matematyce rzeczy siê nie pojmuje, tylko siê do nich przyzwyczaja.- "
-					+ "John von Neumann");
-
-			
+		List<String> ListaCytatow = new ArrayList<String>();
 		
-			int Losowaliczba = (int) (Math.random() * ListaCytatow.size());
 
-			String losCytat = ListaCytatow.get(Losowaliczba);
-
+		ListaCytatow.add("Cytat nr1");
+		ListaCytatow.add("Cytat nr2");
+		ListaCytatow.add("Cytat nr3");
+		ListaCytatow.add("Cytat nr4");
+		ListaCytatow.add("Cytat nr5");
+		ListaCytatow.add("Cytat nr6");
+		ListaCytatow.add("Cytat nr7");
+		
+		Collections.shuffle(ListaCytatow);
+		System.out.println(ListaCytatow);
+			for(int i=0;i<=ListaCytatow.size()-1;i++) {	
 			
-			
-			
-			
-//			Collections.shuffle(ListaCytatow);
-//			System.out.println(ListaCytatow);
-			
-//			for (String NowyCytat:ListaCytatow) {
-//				System.out.println(NowyCytat);
+			if (e.getSource() == przycisk) {
 				
-//			}
+				
+				
+				
+				panel.add(textpane);
+				textpane.setText(ListaCytatow.get(i));
+				
+			}
+			}
 			
 			
-					
 			
-			panel.add(textpane);
-			textpane.setText(losCytat);
+			
+			//TUTAJ BEDZIE KOD DO NOWEGO OKIENKA CZYLI PO WYJSCIU Z PETLI
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+//		for (String NowyCytat:ListaCytatow) {
+			
+//			textpane.setText(NowyCytat);
+//			System.out.println(NowyCytat);
+			
+//		}
+		
+		
+		
+		
+		
+		
+		
+		
+//		if (e.getSource() == przycisk) {
+
+//			List<String> ListaCytatow = new ArrayList<String>();
+//			ListaCytatow.add("Tylko ten nie pope³nia b³êdów, kto nic nie robi. -Napoleon Bonaparte");
+//			ListaCytatow.add(
+//					"S¹ dwa sposoby na tworzenie projektu oprogramowania. "
+//					+ "Jednym jest stworzenie go "
+//					+ "tak prostym, ¿eby nie by³o w nim ¿adnych oczywistych braków. Drugim stworzenie go "
+//					+ "tak skomplikowanym, ¿eby nie by³o w nim ¿adnych oczywistych braków - Hoare");
+//			ListaCytatow.add("Wiêkszoœæ z was zna ju¿ cnoty programistów. S¹ to oczywiœcie: "
+//					+ "lenistwo, niecierpliwoœæ i pycha- Larry Wall");
+//			ListaCytatow.add("Nie obchodzi mnie to, ¿e to nie dzia³a na twoim komputerze! Nie produkujemy"
+//					+ " twoich komputerów! - Vidiu Platon");
+//			ListaCytatow.add("Programowanie w C jest jak szybki taniec na œwie¿o pastowanej pod³odze "
+//					+ "wœród ludzi trzymaj¹cych ¿yletki- Waldi Ravens");
+//			ListaCytatow.add("Zawsze pisz kod tak, jakby goœæ, który ma siê nim zajmowaæ by³ agresywnym "
+//					+ "psychopat¹, który wie, gdzie mieszkasz- Martin Golding");
+//			ListaCytatow.add("Komputer zas³u¿y na miano inteligentnego, je¿eli spowoduje u cz³owieka "
+//					+ "przekonanie, ¿e jest cz³owiekiem.- Alan Turing");
+//			ListaCytatow.add("W matematyce rzeczy siê nie pojmuje, tylko siê do nich przyzwyczaja.- "
+//					+ "John von Neumann");
+
+//			ListaCytatow.add("Cytat nr1");
+//			ListaCytatow.add("Cytat nr2");
+//			ListaCytatow.add("Cytat nr3");
+//			ListaCytatow.add("Cytat nr4");
+//			ListaCytatow.add("Cytat nr5");
+//			ListaCytatow.add("Cytat nr6");
+//			ListaCytatow.add("Cytat nr7");
+			
+			
+
+			
+			
+			
+			
+//			int Losowaliczba = (int) (Math.random() * ListaCytatow.size());
+//			String losCytat = ListaCytatow.get(Losowaliczba);
+		
+	
+			
+//			panel.add(textpane);
+//			textpane.setText(losCytat);
 		
 		
 			
-		}
+//		}
 
 	}
 
