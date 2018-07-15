@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -102,23 +103,32 @@ public class GraficznyInterfejs extends JFrame implements ActionListener {
 			ListaCytatow.add("W matematyce rzeczy siê nie pojmuje, tylko siê do nich przyzwyczaja.- "
 					+ "John von Neumann");
 
+			
+		
 			int Losowaliczba = (int) (Math.random() * ListaCytatow.size());
 
 			String losCytat = ListaCytatow.get(Losowaliczba);
 
-		
 			
 			
 			
 			
+//			Collections.shuffle(ListaCytatow);
+//			System.out.println(ListaCytatow);
+			
+//			for (String NowyCytat:ListaCytatow) {
+//				System.out.println(NowyCytat);
+				
+//			}
 			
 			
-			
-			
-			
+					
 			
 			panel.add(textpane);
 			textpane.setText(losCytat);
+		
+		
+			
 		}
 
 	}
