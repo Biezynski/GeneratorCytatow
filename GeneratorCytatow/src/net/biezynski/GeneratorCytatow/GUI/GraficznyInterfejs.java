@@ -29,20 +29,21 @@ public class GraficznyInterfejs extends JFrame implements ActionListener {
 
 	public GraficznyInterfejs() {
 
-		listaCytatow.add("Tylko ten nie pope³nia b³êdów, kto nic nie robi- Napoleon Bonaparte");
+		listaCytatow.add("\"Tylko ten nie pope³nia b³êdów, kto nic nie robi\"- Napoleon Bonaparte");
 		listaCytatow.add(
-				"S¹ dwa sposoby na tworzenie projektu oprogramowania. Jednym jest stworzenie go tak prostym, ¿eby nie by³o w nim ¿adnych oczywistych braków. Drugim stworzenie go tak skomplikowanym, ¿eby nie by³o w nim ¿adnych oczywistych braków- Hoare");
+				"\"S¹ dwa sposoby na tworzenie projektu oprogramowania. Jednym jest stworzenie go tak prostym, ¿eby nie by³o w nim ¿adnych oczywistych braków. Drugim stworzenie go tak skomplikowanym, ¿eby nie by³o w nim ¿adnych oczywistych braków\"- Hoare");
 		listaCytatow.add(
-				"Wiêkszoœæ z was zna ju¿ cnoty programistów. S¹ to oczywiœcie: lenistwo, niecierpliwoœæ i pycha- Larry Wall");
+				"\"Wiêkszoœæ z was zna ju¿ cnoty programistów. S¹ to oczywiœcie: lenistwo, niecierpliwoœæ i pycha\"- Larry Wall");
 		listaCytatow.add(
-				"Nie obchodzi mnie to, ¿e to nie dzia³a na twoim komputerze! Nie produkujemy twoich komputerów- Vidiu Platon");
+				"\"Nie obchodzi mnie to, ¿e to nie dzia³a na twoim komputerze! Nie produkujemy twoich komputerów\"- Vidiu Platon");
 		listaCytatow.add(
-				"Programowanie w C jest jak szybki taniec na œwie¿o pastowanej pod³odze wœród ludzi trzymaj¹cych ¿yletki- Waldi Ravens");
+				"\"Programowanie w C jest jak szybki taniec na œwie¿o pastowanej pod³odze wœród ludzi trzymaj¹cych ¿yletki\"- Waldi Ravens");
 		listaCytatow.add(
-				"Zawsze pisz kod tak, jakby goœæ, który ma siê nim zajmowaæ by³ agresywnym psychopat¹, który wie, gdzie mieszkasz- Martin Golding");
+				"\"Zawsze pisz kod tak, jakby goœæ, który ma siê nim zajmowaæ by³ agresywnym psychopat¹, który wie, gdzie mieszkasz\"- Martin Golding");
 		listaCytatow.add(
-				"Komputer zas³u¿y na miano inteligentnego, je¿eli spowoduje u cz³owieka przekonanie, ¿e jest cz³owiekiem.- Alan Turing");
-
+				"\"Komputer zas³u¿y na miano inteligentnego, je¿eli spowoduje u cz³owieka przekonanie, ¿e jest cz³owiekiem\"- Alan Turing");
+		
+		//losuje kolejnosc cytatow 
 		Collections.shuffle(listaCytatow);
 
 		// System.out.println(listaCytatow);
